@@ -1,0 +1,23 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="smax.prod.controller.Master" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Product Master">
+		<content>
+	         <List items="{/ProductSet}" id="idList">
+	            <headerToolbar>
+	               <Toolbar>
+	                  <content>
+                            <SearchField  search="onSearch"/>	                  
+	                  </content>
+	               </Toolbar>
+	            </headerToolbar>
+	            <items>
+	               <StandardListItem title="{ProductID}" description="{Name}"
+	               type="Active"
+	               press="onItemSelection"
+	               />
+	            </items>
+	         
+	         </List>
+		</content>
+	</Page>
+</core:View>

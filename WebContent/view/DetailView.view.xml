@@ -1,0 +1,13 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="smax.prod.controller.DetailView" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Detailed View">
+		<content>
+	        <ObjectHeader title="Product ID is :{ProductID}">
+	           <statuses>
+	               <ObjectStatus title="Name"  text="{Name}" 
+	               state = "{= ${ProductID} > 222 ? 'Error' : 'Success'}" />
+	           </statuses>
+	        </ObjectHeader>
+		</content>
+	</Page>
+</core:View>
